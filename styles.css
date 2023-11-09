@@ -1,11 +1,59 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
+:root{
+    font-size: 62.5%;
+    --color-default: #2987A9;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;;
+    font-size: 1.6rem;
+}
+
+.color-default {
+    color: var(--color-default);
+}
+
+aside img {
+    height: 200px;
+    width: 200px;
+}
+
+
 aside h1 {
-    font-family: 'Roboto';
+    
     font-size: 64px;
     font-weight: 500;
     line-height: 75px;
     letter-spacing: 0em;
+}
+
+
+main {
+    width: 60rem;
+    height: 52rem;
+    border: 0.1rem solid rgba(0, 0, 0, 0.95);
+}
+
+main h2{
+    max-width: 44rem;
+    font-size: 3.6rem;
+    font-weight: 500;
+}
+
+main .actions {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+main .actions a {
+    background-color: #35E6E9;
+}
+
+main .actions a + a{
+    background-color: #FF5678;
 }
