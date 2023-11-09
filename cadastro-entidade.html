@@ -16,25 +16,50 @@
         <aside>
             <img src="./assets/figura-logo.png" alt="foto caricata de uma moça brincando com um cachorro">
 
-            <h1><span class="color-default">Dog</span> Form2</h1>
+            <h1><span class="color-default">Dog</span> Form</h1>
         </aside>
 
         <main>
+            <header>
             <a href="index.html">
                 <i class="fa-solid fa-angle-left"></i>
             </a>
+
             <h2>Nova <span class="color-default">entidade</span></h2>
 
+            </header>
+            
+
+            <form action="">
+                <label for="input-name">Nome</label>
+                <input type="text" id="input-name">
+
+                <label for="input-field">Campo de atuação</label>
+
+                <div class="select-div">
+                    <select type="text" id="input-field">
+                        <option value="">Selecione uma opção</option>
+                        <option value="abrigo">Abrigo de Animais</option>
+                    </select>
+                </div>
+               
+               
+                <div class="points">
+                    <label for="input-points">Pontos de coleta</label>
+                    <input type="text" id="input-points">
+
+                    <button>
+                        <i class="fa-solid fa-circle-plus"></i>
+                    </button>
+                </div>
+                
+            </form>
+
+
             <div class="actions">
-                <a href="">Cadastrar entidade</a>
-                <a href="">Ver entidades cadastradas</a>
+                <a href="">Cadastrar</a>
             </div>
 
-            <footer>
-                <p>Sua entidade não se enquadra nos campos de atuação disponíveis?</p>
-                <a href="">Registrar novo campo de atuação</a>
-            </footer>
-            
             
         </main>
 
