@@ -12,15 +12,36 @@
 body {
     font-family: 'Roboto', sans-serif;;
     font-size: 1.4rem;
+    overflow: hidden;
 }
 
 .color-default {
     color: var(--color-default);
 }
 
-aside img {
-    height: 200px;
-    width: 200px;
+.content {
+    display: grid;
+    grid-template-areas:
+        ". . . . ."
+        ". hero . form ."
+        ". hero . form . "
+        ". . . . ."   
+     ;
+     gap: 8.5rem;
+}
+
+
+/* Lado esquerdo: Imagem e Logo*/
+aside {
+    grid-area: hero;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+aside img {    
+    width: 40rem;
 }
 
 
@@ -32,12 +53,14 @@ aside h1 {
     letter-spacing: 0em;
 }
 
-
+/* Lado direito: Textos e botões*/
 main {
     width: 60rem;
     height: 52rem;
-    border: 0.1rem solid rgba(0, 0, 0, 0.95);
+    border: 0.1rem solid rgba(0, 0, 0, 0.15);
     padding: 4.4rem 5.7rem ;
+    border-radius: 1.2rem;
+    grid-area: form;
 }
 
 main h2{
@@ -46,6 +69,7 @@ main h2{
     font-weight: 500;
 }
 
+/*          Botões*/
 main .actions {
     display: flex;
     flex-flow: column wrap;
@@ -61,17 +85,23 @@ main .actions a {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 5.4rem;
 }
 
 main .actions a + a{
     background-color: #FF5678;
     margin-top: 4.8rem;
 }
-
+/*          Rodapé*/
 main footer p{
     font-size: 1.6rem;
+    margin-top: 8rem;
 }
 
 main footer a{
+    margin-top: 1rem;
     font-size: 1.8rem;
+    text-align: center;
+    color: black;
+    display: block;
 }
